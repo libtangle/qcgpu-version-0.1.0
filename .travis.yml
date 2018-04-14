@@ -10,6 +10,7 @@ os: osx
 sudo: false
 before_install:
     - brew install libquantum --devel
+    - cargo update
 after_success:
     - cargo install mdbook
     - cargo doc

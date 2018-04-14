@@ -1,9 +1,9 @@
 #[macro_use]
 extern crate criterion;
-extern crate libquantum_devel;
+extern crate libquantum_patched;
 extern crate qcgpu;
 
-use libquantum_devel as libquantum;
+use libquantum_patched as libquantum;
 
 use std::time::Duration;
 use criterion::{Criterion, Fun};
@@ -12,10 +12,7 @@ use qcgpu::gates::h;
 
 // Criterion struct for really fast benchmarks
 fn fast_benchmark() -> Criterion {
-    Criterion::default()
-        .warm_up_time(Duration::from_millis(220))
-        .sample_size(10)
-        .nresamples(5)
+    Criterion::default().sample_size(10).nresamples(2).warm_up_time(Duration::new(0,5))
 }
 
 fn benchmarks(c: &mut Criterion) {
