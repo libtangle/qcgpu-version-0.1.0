@@ -17,4 +17,3 @@ fn gcd_test() {
     assert_eq!(gcd(102, 4), 2);
     assert_eq!(gcd(22937552, 432784), 432784);
 }
-

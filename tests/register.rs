@@ -35,7 +35,6 @@ fn num_qubits() {
     }
 }
 
-
 #[test]
 fn add_scratch() {
     for i in 1..16 {
@@ -45,4 +44,3 @@ fn add_scratch() {
         assert_eq!(state.num_qubits, i + 2);
     }
 }
-

@@ -10,7 +10,10 @@ use qcgpu::gates::h;
 
 // Criterion struct for really fast benchmarks
 fn fast_benchmark() -> Criterion {
-   Criterion::default().sample_size(10).nresamples(2).warm_up_time(Duration::new(0,5))
+    Criterion::default()
+        .sample_size(10)
+        .nresamples(2)
+        .warm_up_time(Duration::new(0, 5))
 }
 
 fn hadamard_all_command() -> Command {
