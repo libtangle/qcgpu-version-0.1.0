@@ -29,18 +29,9 @@ ocl = "0.18"
 
 [dev-dependencies]
 criterion = "0.2.2"
-libquantum-patched = "0.1.3"
 
 [[bench]]
 name = "benchmark"
-harness = false
-
-[[bench]]
-name = "qiskit"
-harness = false
-
-[[bench]]
-name = "libquantum"
 harness = false
 
 [[example]]

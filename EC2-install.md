@@ -31,3 +31,10 @@ source $HOME/.cargo/env
 git clone https://github.com/QCGPU/qcgpu-rust
 cd qcgpu-rust
 ```
+
+EC2 Amazon Machine Learning Base
+
+```
+sudo dpkg --configure -a
+sudo apt install libquantum-dev
+```
